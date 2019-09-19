@@ -1,6 +1,6 @@
 # Sample Supertest Tests
 
-Integration Tests using mocha, chai and supertest for test hdttpbin site
+Integration Tests using mocha, chai and supertest for test httpbin site [https://httpbin.org/#/]
 
 ## Set up
 
@@ -19,3 +19,4 @@ npm install
 ```bash
 npm test
 ```
+
