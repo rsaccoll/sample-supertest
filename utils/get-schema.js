@@ -12,7 +12,7 @@ const get_schema = Joi.object().keys({
         'Sec-Fetch-Mode': validation.STRING_NOT_NULL.required(),
         'Sec-Fetch-Site': validation.STRING_NOT_NULL.required(),
         'User-Agent': validation.STRING_NOT_NULL.required()
-    })
+    }),
     'origin': validation.IP.required(),
     'url': validation.STRING_NOT_NULL.required()
 })
