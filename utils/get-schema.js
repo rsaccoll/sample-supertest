@@ -22,3 +22,5 @@ const get_schema = Joi.object().keys({
     origin: validation.IP.required(),
     url: validation.STRING_NOT_NULL.required()
 })
+
+module.exports = get_schema;
