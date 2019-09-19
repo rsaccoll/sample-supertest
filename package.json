@@ -18,7 +18,8 @@
     "mocha-parallel-tests": "^2.1.0"
   },
   "scripts": {
-    "test": "mocha-parallel-tests --timeout 48000 */*.spec.js --reporter mochawesome"
+    "test": "mocha-parallel-tests --timeout 48000 tests/*.spec.js --reporter mochawesome",
+    "test-contract:get": "mocha --timeout 30000 tests/contract/*.spec.js --reporter mochawesome"
   },
   "author": "Ramses Almeida",
   "license": "MIT"
