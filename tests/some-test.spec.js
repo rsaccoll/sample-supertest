@@ -18,4 +18,48 @@ describe('HTTPBIN Sample for tests', function(){
             assert.equal(result.body.url, 'https://httpbin.org/get', JSON.stringify(result, null, 2));
         })
     });
+
+    it('/POST Test Example', async() => {
+        const result = await request(url)
+        .post('/post')
+        .set('Content-Type', 'application/json')
+        .timeout({ response: 100000, deadline: 100000 })
+        .then(result => {
+            expect(result.statusCode, JSON.stringify(result, null, 2)).to.equal(200);
+            assert.equal(result.body.url, 'https://httpbin.org/post', JSON.stringify(result, null, 2));
+        })
+    });
+
+    it('/PATCH Test Example', async() => {
+        const result = await request(url)
+        .patch('/patch')
+        .set('Content-Type', 'application/json')
+        .timeout({ response: 100000, deadline: 100000 })
+        .then(result => {
+            expect(result.statusCode, JSON.stringify(result, null, 2)).to.equal(200);
+            assert.equal(result.body.url, 'https://httpbin.org/patch', JSON.stringify(result, null, 2));
+        })
+    });
+
+    it('/DELETE Test Example', async() => {
+        const result = await request(url)
+        .delete('/delete')
+        .set('Content-Type', 'application/json')
+        .timeout({ response: 100000, deadline: 100000 })
+        .then(result => {
+            expect(result.statusCode, JSON.stringify(result, null, 2)).to.equal(200);
+            assert.equal(result.body.url, 'https://httpbin.org/delete', JSON.stringify(result, null, 2));
+        })
+    });
+
+    it('/PUT Test Example', async() => {
+        const result = await request(url)
+        .put('/put')
+        .set('Content-Type', 'application/json')
+        .timeout({ response: 100000, deadline: 100000 })
+        .then(result => {
+            expect(result.statusCode, JSON.stringify(result, null, 2)).to.equal(200);
+            assert.equal(result.body.url, 'https://httpbin.org/put', JSON.stringify(result, null, 2));
+        })
+    });
 })
