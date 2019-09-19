@@ -20,3 +20,9 @@ npm install
 npm test
 ```
 
+## Run Contract Test
+
+```bash
+npm run test-contract:get
+```
+
