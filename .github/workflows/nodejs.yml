@@ -22,4 +22,5 @@ jobs:
         npm install
         npm test
       env:
+        URL_TO_TEST: ${{ secrets.URL_TO_TEST }}
         CI: true
