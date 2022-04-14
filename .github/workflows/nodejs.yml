@@ -24,9 +24,3 @@ jobs:
       env:
         URL_TO_TEST: ${{ secrets.URL_TO_TEST }}
         CI: true
-    - name: npm contract test
-      run: |
-        npm run test-contract:get
-      env:
-        URL_TO_TEST: ${{ secrets.URL_TO_TEST }}
-        CI: true
