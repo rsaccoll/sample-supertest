@@ -7,7 +7,7 @@
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "dotenv": "^7.0.0",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "joi-assert": "0.0.3",
     "mochawesome": "^3.1.1",
     "supertest": "^3.4.2"
